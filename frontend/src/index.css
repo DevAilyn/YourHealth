@@ -1,0 +1,23 @@
+@import "tailwindcss";
+
+@theme {
+  --color-dark-bg: #011627;
+  --color-primary: #41EAD4;
+  --color-light-bg: #E8FFFC;
+  --color-cta: #E4121C;
+  --color-accent: #31AF9F;
+  --color-highlight: #FBF7D3;
+  --color-darkblue-bg: #5D778A;
+}
+
+
+html, body {
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+  background-color: var(--color-dark-bg);
+}
+
+.active hr {
+   @apply block;
+}
