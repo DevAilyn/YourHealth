@@ -43,7 +43,7 @@ Proyecto desarrollado por **Ailyn**
 
 ## 📌 Notas
 
-La estructura y funcionamiento han sido aprendidos y adaptados a partir de tutoriales del canal [GreatStack](https://www.youtube.com/@GreatStack).  
+La estructura y funcionamiento han sido aprendidos y adaptados a partir de tutoriales del canal [GreatStack](https://www.youtube.com/@GreatStackDev).  
 El diseño visual, colores, distribución y la marca **YourHealth** son propios y creados de manera original para este proyecto.
 
 
