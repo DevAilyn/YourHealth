@@ -1,6 +1,9 @@
 <p align="center">
-  [Imgur](https://i.imgur.com/jS3T1T4.png)
+  <a href="https://imgur.com/jS3T1T4">
+    <img src="https://i.imgur.com/jS3T1T4.png" width="400" />
+  </a>
 </p>
+
 
 **YourHealth** es una plataforma en desarrollo enfocada en la gestión de entrenadores personalizados.  
 Actualmente el proyecto se encuentra en construcción, con el **frontend** como primera parte implementada.  
