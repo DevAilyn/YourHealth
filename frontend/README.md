@@ -1,12 +1,49 @@
-# React + Vite
+<p align="center">
+  <img src="./public/Logo-YourHealth.png" alt="YourHealth Logo" width="200"/>
+</p>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**YourHealth** es una plataforma en desarrollo enfocada en la gestión de entrenadores personalizados.  
+Actualmente el proyecto se encuentra en construcción, con el **frontend** como primera parte implementada.  
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚧 Estado del proyecto
+- En proceso de desarrollo  
+- Frontend inicial en React completado (menú de navegación y página de inicio)  
+- Backend pendiente de construcción (MongoDB, Express, Node.js)  
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🛠️ Tecnologías utilizadas
+<p>
+  <img src="https://skillicons.dev/icons?i=react" alt="React" width="50" />
+  <img src="https://skillicons.dev/icons?i=nodejs" alt="Node.js" width="50" />
+  <img src="https://skillicons.dev/icons?i=express" alt="Express" width="50" />
+  <img src="https://skillicons.dev/icons?i=mongodb" alt="MongoDB" width="50" />
+  <img src="https://skillicons.dev/icons?i=tailwind" alt="TailwindCSS" width="50" />
+</p>
+
+---
+
+## 📌 Próximos pasos
+- Completar la integración del backend (API con Node + Express + MongoDB).  
+- Implementar autenticación de usuarios.  
+- Agregar funcionalidades de agendamiento de entrenamientos.  
+
+---
+
+## 📸 Créditos de recursos
+Imágenes: [Pexels](https://www.pexels.com), [Freepik](https://www.freepik.com)  
+Íconos: [Flaticon](https://www.flaticon.com)  
+
+---
+
+## 👩‍💻 Autor
+Proyecto desarrollado por **Ailyn** 
+
+## 📌 Notas
+
+La estructura y funcionamiento han sido aprendidos y adaptados a partir de tutoriales del canal [GreatStack](https://www.youtube.com/@GreatStackDev).  
+El diseño visual, colores, distribución y la marca **YourHealth** son propios y creados de manera original para este proyecto.
+
+
