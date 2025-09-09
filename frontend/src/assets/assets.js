@@ -30,28 +30,25 @@ import perfil from '../assets/images/group_images/perfil-men.jpg'
 import desglose from '../assets/images/group_icons/desglosar_icon.svg'
 import flecha from '../assets/images/group_icons/flecha_icon.svg'
 import elipse from '../assets/images/group_images/elipse_fondo.png'
+import verifiedIcon from '../assets/images/group_icons/verified_icon.svg'
+import infoIcon from '../assets/images/group_icons/info_icon.svg'
 
-// === Especialidades  ===
-import strength from './images/group_icons/strength_icon.png'     // Fuerza
-import cardio from './images/group_icons/cardio_icon.png'         // Cardio
-import muscle from './images/group_icons/muscle_icon.png'         // Aumento de masa
-import toning from './images/group_icons/toning_icon.png'         // Tonificación
-import functional from './images/group_icons/training_icon.png'   // Entrenamiento funcional
-import weightLoss from './images/group_icons/lose_icon.png'       // Bajar de peso
-import weightGain from './images/group_icons/gain_icon.png'       // Subir de peso
-import postpartum from './images/group_icons/postpartum_icon.png' // Postparto
-
+// === Especialidades ===
+import strength from './images/group_icons/strength_icon.png'
+import cardio from './images/group_icons/cardio_icon.png'
+import muscle from './images/group_icons/muscle_icon.png'
+import toning from './images/group_icons/toning_icon.png'
+import functional from './images/group_icons/training_icon.png'
+import weightLoss from './images/group_icons/lose_icon.png'
+import weightGain from './images/group_icons/gain_icon.png'
+import postpartum from './images/group_icons/postpartum_icon.png'
 
 // -------- Importación de videos --------
 import inicioSesionVideo from '../assets/videos/hombre-inicio-sesion.mp4'
-import registroVideo from '../assets/videos/personas-resgistro-video.mp4'
+import registroVideo from '../assets/videos/personas-registro-video.mp4'
 
-
-// --- Exportar como objeto ---
-
-
+// === Objetivos con íconos ===
 export const objetivosData = [
-  // Especialidades con íconos
   { objetivo: 'Fuerza', image: strength },
   { objetivo: 'Cardio', image: cardio },
   { objetivo: 'Aumento de masa muscular', image: muscle },
@@ -62,17 +59,17 @@ export const objetivosData = [
   { objetivo: 'Entrenamiento postparto', image: postpartum }
 ]
 
-// Entrenadores
+// === Entrenadores ===
 export const trainers = [
   {
     _id: 'entrenadorCarlos',
     name: 'Carlos Mendoza',
     image: trainer1,
-    speciality: 'Fuerza',
+    objetivo: 'Fuerza',
     certifications: 'ENT, CES',
     experience: '6 años',
     about: 'Entrenador certificado con enfoque en hipertrofia y fuerza funcional. Apasionado por transformar hábitos y mentes.',
-    price: 80000, // \$80.000 por hora
+    price: 80000,
     modalities: ['presencial', 'online'],
     location: 'Gimnasio FitLife, Av. Principal 123',
     rating: 4.9,
@@ -82,7 +79,7 @@ export const trainers = [
     _id: 'entrenadoraLucia',
     name: 'Lucía Ramírez',
     image: trainer2,
-    speciality: 'Bajar de peso con enfoque nutricional',
+    objetivo: 'Bajar de peso con enfoque nutricional',
     certifications: 'Nutrióloga Deportiva, Coach en Hábitos Saludables',
     experience: '5 años',
     about: 'Ayudo a mis clientes a perder peso de forma sostenible combinando entrenamientos personalizados con planes nutricionales reales. No hay dietas extremas, solo hábitos que duran para siempre.',
@@ -96,7 +93,7 @@ export const trainers = [
     _id: 'entrenadorAndres',
     name: 'Andrés Torres',
     image: trainer3,
-    speciality: 'Cardio',
+    objetivo: 'Cardio',
     certifications: 'ACSM, PFT',
     experience: '4 años',
     about: 'Experto en entrenamiento cardiovascular de alto rendimiento. Ideal para corredores, triatletas y pérdida de grasa.',
@@ -110,7 +107,7 @@ export const trainers = [
     _id: 'entrenadoraSofia',
     name: 'Sofía Castillo',
     image: trainer4,
-    speciality: 'Tonificación',
+    objetivo: 'Tonificación',
     certifications: 'NASM, Corrective Exercise',
     experience: '7 años',
     about: 'Especialista en tonificación y definición muscular. Mis programas combinan fuerza, resistencia y control postural.',
@@ -124,7 +121,7 @@ export const trainers = [
     _id: 'entrenadorDiego',
     name: 'Diego Fernández',
     image: trainer5,
-    speciality: 'Entrenamiento Funcional',
+    objetivo: 'Entrenamiento Funcional',
     certifications: 'CrossFit L3, FMS',
     experience: '5 años',
     about: 'Entrenador funcional con experiencia en movilidad, core y prevención de lesiones. Ideal para personas activas.',
@@ -138,7 +135,7 @@ export const trainers = [
     _id: 'entrenadoraValentina',
     name: 'Valentina Paredes',
     image: trainer6,
-    speciality: 'Cardio',
+    objetivo: 'Cardio',
     certifications: 'NASM, HIIT Specialist',
     experience: '3 años',
     about: 'Especialista en entrenamientos HIIT y tabatas. Perfecto para quienes buscan quemar grasa y ganar resistencia.',
@@ -152,7 +149,7 @@ export const trainers = [
     _id: 'entrenadorJavier',
     name: 'Javier Rojas',
     image: trainer7,
-    speciality: 'Fuerza',
+    objetivo: 'Fuerza',
     certifications: 'NSCA-CPT, PES',
     experience: '8 años',
     about: 'Experto en entrenamiento de fuerza máxima y preparación física. Trabaja con atletas y personas que buscan definición.',
@@ -166,7 +163,7 @@ export const trainers = [
     _id: 'entrenadoraCamila',
     name: 'Camila Ortega',
     image: trainer8,
-    speciality: 'Bajar de peso con enfoque nutricional',
+    objetivo: 'Bajar de peso con enfoque nutricional',
     certifications: 'Diplomado en Nutrición Deportiva, Entrenadora Metabólica',
     experience: '4 años',
     about: 'Mis programas integran cardio, fuerza y alimentación para acelerar la pérdida de grasa sin perder masa muscular. Ideal para quienes buscan definirse y sentirse mejor.',
@@ -180,7 +177,7 @@ export const trainers = [
     _id: 'entrenadorMateo',
     name: 'Mateo Silva',
     image: trainer9,
-    speciality: 'Aumento de masa muscular',
+    objetivo: 'Aumento de masa muscular',
     certifications: 'ISSA, Hypertrophy Specialist',
     experience: '5 años',
     about: 'Mi enfoque es el desarrollo muscular progresivo y sostenible. Trabajo con principiantes y avanzados que buscan volumen y fuerza.',
@@ -194,7 +191,7 @@ export const trainers = [
     _id: 'entrenadoraDaniela',
     name: 'Daniela Méndez',
     image: trainer10,
-    speciality: 'Entrenamiento Funcional',
+    objetivo: 'Entrenamiento Funcional',
     certifications: 'TRX, Suspension Training',
     experience: '4 años',
     about: 'Me especializo en entrenamientos funcionales para mejorar movilidad, equilibrio y fuerza en movimientos cotidianos.',
@@ -208,7 +205,7 @@ export const trainers = [
     _id: 'entrenadorAlejandro',
     name: 'Alejandro Cruz',
     image: trainer11,
-    speciality: 'Fuerza',
+    objetivo: 'Fuerza',
     certifications: 'ISSA, Strength Coach',
     experience: '7 años',
     about: 'Entrenador de fuerza con enfoque en progresión segura y constante. Ideal para principiantes y avanzados.',
@@ -222,7 +219,7 @@ export const trainers = [
     _id: 'entrenadoraRenata',
     name: 'Renata Gómez',
     image: trainer12,
-    speciality: 'Cardio',
+    objetivo: 'Cardio',
     certifications: 'ACE, Group Fitness',
     experience: '3 años',
     about: 'Instructora de clases grupales de cardio, spinning y dance fitness. Energía y motivación garantizadas.',
@@ -236,7 +233,7 @@ export const trainers = [
     _id: 'entrenadorFernando',
     name: 'Fernando Lara',
     image: trainer13,
-    speciality: 'Ganar peso con entrenamiento y nutrición',
+    objetivo: 'Ganar peso con entrenamiento y nutrición',
     certifications: 'Coach en Hipertrofia, Especialista en Nutrición para Volumen',
     experience: '5 años',
     about: 'Ayudo a personas delgadas o ectomorfas a ganar peso saludable con entrenamientos de fuerza progresiva y planes nutricionales altos en calorías pero equilibrados.',
@@ -250,7 +247,7 @@ export const trainers = [
     _id: 'entrenadoraIsabella',
     name: 'Isabella Ríos',
     image: trainer14,
-    speciality: 'Entrenamiento postparto',
+    objetivo: 'Entrenamiento postparto',
     certifications: 'Pre & Postnatal Coach, Corrective Exercise',
     experience: '6 años',
     about: 'Apoyo a mamás en su recuperación postparto con programas seguros de suelo pélvico, core y fortalecimiento progresivo.',
@@ -264,7 +261,7 @@ export const trainers = [
     _id: 'entrenadorEmilio',
     name: 'Emilio Vargas',
     image: trainer15,
-    speciality: 'Aumento de masa muscular',
+    objetivo: 'Aumento de masa muscular',
     certifications: 'PN-L1, Muscle Growth Specialist',
     experience: '4 años',
     about: 'Diseño rutinas personalizadas para ganar masa muscular con progresión inteligente y alimentación alineada.',
@@ -276,6 +273,7 @@ export const trainers = [
   }
 ]
 
+// === Exportar todos los assets ===
 export const assets = {
   // Iconos
   alturaIcon,
@@ -289,13 +287,15 @@ export const assets = {
   desglose,
   flecha,
   elipse,
+  verifiedIcon,
+  infoIcon,
 
-  // Imagenes complementarias
+  // Imágenes complementarias
   womanHome,
   peopleHome,
   perfil,
 
-  //Videos
+  // Videos
   inicioSesionVideo,
   registroVideo
 }
