@@ -1,4 +1,4 @@
-# 🏗️ Arquitectura del Proyecto: YourHealth
+# Arquitectura del Proyecto: YourHealth
 
 > Plataforma para conectar usuarios con entrenadores personales según sus objetivos de fitness.
 
@@ -33,7 +33,7 @@ YourHealth es una aplicación web que permite a los usuarios:
 
 ```bash
 yourhealth-project/
-├── public/                     # Archivos públicos (favicon, index.html)
+├── public/                     # Archivos públicos (favicon)
 ├── src/
 │   ├── assets/                 # Imágenes, íconos, videos y exports centralizados
 │   │   └── assets.js           # Centraliza todos los assets importados
@@ -53,11 +53,14 @@ yourhealth-project/
 │   │   ├── MiPerfil.jsx
 │   │   ├── MisReservas.jsx
 │   │   └── SobreNosotros.jsx
+│   │   └── Registro.jsx
 │   ├── App.jsx                 # Componente raíz con definición de rutas
 │   ├── main.jsx                # Punto de entrada, envuelve App con Context y Router
 │   └── index.css               # Estilos globales y variables CSS personalizadas
-├── ARCHITECTURE.md             # ¡Este archivo!
+├── ARCHITECTURE.md             # Este archivo
 └── package.json
+└── vite.config.js
+```
 
 ## 🔑 Patrones de Diseño Implementados
 
@@ -103,6 +106,7 @@ Las rutas se definen en `App.jsx`:
 <Route path="/mi-perfil" element={<MiPerfil />} />
 <Route path="/mis-reservas" element={<MisReservas />} />
 <Route path="/sobre-nosotros" element={<SobreNosotros />} />
+```
 
 ### ✨ Características
 
@@ -136,18 +140,6 @@ Las rutas se definen en `App.jsx`:
 | **Estado Global**| Context API              |
 | **Assets**       | Flaticon, Freepik, Pexels|
 | **Futuro Deploy**| Vercel / Netlify         |
-
----
-
-## 🚧 Próximos Pasos / Mejoras Sugeridas
-
-- Implementar autenticación con JWT o Firebase.
-- Crear backend (Node.js + Express + MongoDB).
-- Sistema de reservas real con fechas/horarios.
-- Filtros avanzados por precio, modalidad, rating.
-- Optimizar imágenes con carga diferida.
-- Añadir tests unitarios con Jest + React Testing Library.
-- Escalar el estado global con Zustand o Redux Toolkit.
 
 ---
 
