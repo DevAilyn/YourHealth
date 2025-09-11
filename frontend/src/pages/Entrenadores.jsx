@@ -1,35 +1,25 @@
 import React, { useContext, useState, useEffect } from "react"
 import { useParams, useNavigate } from "react-router-dom"
 import { AppContext } from "../context/AppContext"
+import { objetivo } from "../assets/assets"
 
 const Entrenadores = () => {
   const { especialidad } = useParams()
   const navigate = useNavigate()
-  const { trainers } = useContext(AppContext)
+  const { trainers } = useContext(AppContext) // <-- trainers viene del contexto, que debe cargarse desde assets.js en App.jsx
 
   const [filterEntrenador, setFilterEntrenador] = useState([])
 
   useEffect(() => {
     if (especialidad) {
       const filtrados = trainers.filter(
-        (t) => t.speciality.toLowerCase() === especialidad.toLowerCase()
+        (t) => t.objetivo.toLowerCase() === especialidad.toLowerCase()
       )
       setFilterEntrenador(filtrados)
     } else {
       setFilterEntrenador(trainers)
     }
   }, [especialidad, trainers])
-
-  const especialidades = [
-    "Fuerza",
-    "Cardio",
-    "Aumento de masa muscular",
-    "Tonificación",
-    "Entrenamiento Funcional",
-    "Bajar de peso con enfoque nutricional",
-    "Ganar peso con entrenamiento y nutrición",
-    "Entrenamiento postparto",
-  ]
 
   return (
     <div className="text-white px-6 py-12">
@@ -41,24 +31,22 @@ const Entrenadores = () => {
         {/* Botón para ver todos */}
         <button
           onClick={() => navigate("/entrenadores")}
-          className={`px-4 py-2 rounded-full transition ${
-            !especialidad
+          className={`px-4 py-2 rounded-full transition ${!especialidad
               ? "bg-red-500 text-white"
               : "bg-gray-600 text-white hover:bg-gray-500"
-          }`}
+            }`}
         >
           Ver todos
         </button>
 
-        {especialidades.map((esp, i) => (
+        {objetivo.map((esp, i) => ( 
           <button
             key={i}
             onClick={() => navigate(`/entrenadores/${esp}`)}
-            className={`px-4 py-2 rounded-full transition ${
-              especialidad?.toLowerCase() === esp.toLowerCase()
+            className={`px-4 py-2 rounded-full transition ${especialidad?.toLowerCase() === esp.toLowerCase()
                 ? "bg-red-500 text-white"
                 : "bg-primary text-dark-bg hover:bg-accent"
-            }`}
+              }`}
           >
             {esp}
           </button>
@@ -87,7 +75,7 @@ const Entrenadores = () => {
                   <p>Disponible</p>
                 </div>
                 <p className="font-semibold text-black">{item.name}</p>
-                <p className="text-sm text-black">{item.speciality}</p>
+                <p className="text-sm text-black">{item.objetivo}</p>
               </div>
             </div>
           ))

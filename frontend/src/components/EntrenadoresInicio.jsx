@@ -35,7 +35,7 @@ const EntrenadoresInicio = () => {
                             </div>
 
                             <p className="font-semibold text-black">{item.name}</p>
-                            <p className="text-sm text-black">{item.speciality}</p>
+                            <p className="text-sm text-black">{item.objetivo}</p>
                         </div>
                     </div>
                 ))}

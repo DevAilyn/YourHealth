@@ -47,6 +47,35 @@ import postpartum from './images/group_icons/postpartum_icon.png'
 import inicioSesionVideo from '../assets/videos/hombre-inicio-sesion.mp4'
 import registroVideo from '../assets/videos/personas-registro-video.mp4'
 
+
+// === Exportar todos los assets ===
+export const assets = {
+  // Iconos
+  alturaIcon,
+  correoIcon,
+  edadIcon,
+  logoIcon,
+  passwordIcon,
+  pesoIcon,
+  usuarioInputIcon,
+  logo,
+  desglose,
+  flecha,
+  elipse,
+  verifiedIcon,
+  infoIcon,
+
+  // Imágenes complementarias
+  womanHome,
+  peopleHome,
+  perfil,
+
+  // Videos
+  inicioSesionVideo,
+  registroVideo
+}
+
+
 // === Objetivos con íconos ===
 export const objetivosData = [
   { objetivo: 'Fuerza', image: strength },
@@ -58,6 +87,9 @@ export const objetivosData = [
   { objetivo: 'Ganar peso con entrenamiento y nutrición', image: weightGain },
   { objetivo: 'Entrenamiento postparto', image: postpartum }
 ]
+
+
+
 
 // === Entrenadores ===
 export const trainers = [
@@ -273,29 +305,14 @@ export const trainers = [
   }
 ]
 
-// === Exportar todos los assets ===
-export const assets = {
-  // Iconos
-  alturaIcon,
-  correoIcon,
-  edadIcon,
-  logoIcon,
-  passwordIcon,
-  pesoIcon,
-  usuarioInputIcon,
-  logo,
-  desglose,
-  flecha,
-  elipse,
-  verifiedIcon,
-  infoIcon,
 
-  // Imágenes complementarias
-  womanHome,
-  peopleHome,
-  perfil,
-
-  // Videos
-  inicioSesionVideo,
-  registroVideo
-}
+  export const objetivo = [
+    "Fuerza",
+    "Cardio",
+    "Aumento de masa muscular",
+    "Tonificación",
+    "Entrenamiento Funcional",
+    "Bajar de peso con enfoque nutricional",
+    "Ganar peso con entrenamiento y nutrición",
+    "Entrenamiento postparto",
+  ]
