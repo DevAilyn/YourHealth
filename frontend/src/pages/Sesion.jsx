@@ -1,6 +1,6 @@
 import React from 'react'
 
-const InicioSesion = () => {
+const Sesion = () => {
   return (
     <div>
         
@@ -8,4 +8,4 @@ const InicioSesion = () => {
   )
 }
 
-export default InicioSesion
+export default Sesion
