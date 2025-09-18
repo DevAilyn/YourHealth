@@ -10,6 +10,7 @@ import SobreNosotros from './pages/SobreNosotros'
 import Reservas from './pages/Reservas'
 import Menu from './components/Menu'
 import Footer from './components/Footer'
+import Registro from './pages/Registro'
 
 const App = () => {
   return (
@@ -27,7 +28,8 @@ const App = () => {
           <Route path="/inicio" element={<Inicio />} />
           <Route path="/entrenadores" element={<Entrenadores />} />
           <Route path="/entrenadores/:especialidad" element={<Entrenadores />} />
-          <Route path="/Sesion" element={<Sesion />} />
+          <Route path="/inicio-sesion" element={<InicioSesion />} />
+          <Route path="/registro" element={<Registro />}/>
           <Route path="/sobre-nosotros" element={<SobreNosotros />} />
           <Route path="/mi-perfil" element={<MiPerfil />} />
           <Route path="/mis-reservas" element={<MisReservas />} />

@@ -23,7 +23,7 @@ const Header = () => {
           Ofrecemos clases personalizadas con entrenadores profesionales, diseñadas para ajustarse a tu nivel, tu ritmo y tus metas.
         </p>
 
-        <button onClick={(()=>navigate('/Registro'))} className="cursor-pointer w-35 inline-flex items-center gap-2 mt-4 px-4 py-2 bg-cta text-white font-semibold rounded-full shadow hover:bg-red-700 transition">
+        <button onClick={(()=>navigate('/registro'))} className="cursor-pointer w-35 inline-flex items-center gap-2 mt-4 px-4 py-2 bg-cta text-white font-semibold rounded-full shadow hover:bg-red-700 transition">
           ¡Comienza ya!
         </button>
 
