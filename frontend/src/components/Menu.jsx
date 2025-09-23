@@ -39,7 +39,7 @@ const Menu = () => {
             ? <div>
                 
             </div>
-            : <button onClick={()=>navigate('/inicio-sesion')} className='px-4 py-2 border border-gray-300 text-dark-bg bg-light-bg rounded-full text-sm font-medium hover:bg-highlight transition-colors hidden md:block'>Inicia Sesión</button>
+            : <button onClick={()=>navigate('/inicio-sesion')} className='px-4 py-2 border border-gray-300 text-dark-bg bg-light-bg rounded-full text-sm font-medium hover:bg-highlight transition-colors hidden md:block cursor-pointer'>Inicia Sesión</button>
         }
 
          {
@@ -55,7 +55,7 @@ const Menu = () => {
                     </div>
                 </div>
             </div>
-            : <button onClick={()=>navigate('/registro')}className='px-4 py-2 bg-primary text-dark-bg rounded-full text-sm font-medium hover:bg-[#30c7b4] transition-colors hidden md:block'>Regístrate</button>
+            : <button onClick={()=>navigate('/registro')}className='px-4 py-2 bg-primary text-dark-bg rounded-full text-sm font-medium hover:bg-[#30c7b4] transition-colors hidden md:block cursor-pointer'>Regístrate</button>
         }
 
 

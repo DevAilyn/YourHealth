@@ -50,7 +50,6 @@ const Registro = () => {
 
   return (
     <div className="min-h-screen bg-dark-bg flex items-center justify-center p-4">
-
       <div className="max-w-6xl w-full grid md:grid-cols-2 ">
 
         {/* Izquierda: Video */}
@@ -62,7 +61,6 @@ const Registro = () => {
             muted
             className="w-full h-full object-cover"
           />
-          <div className="absolute inset-0 bg-black bg-opacity-20"></div>
         </div>
 
         {/* Derecha: Formulario */}
@@ -142,14 +140,14 @@ const Registro = () => {
 
                 <button
                   type="submit"
-                  className="w-full bg-accent hover:bg-green-500 text-white font-bold py-3 px-6 rounded-full transition duration-200 shadow-lg"
+                  className="cursor-pointer w-full bg-accent hover:bg-green-500 text-white font-bold py-3 px-6 rounded-full transition duration-200 shadow-lg"
                 >
                   Continuar →
                 </button>
 
                 <div className="mt-6 text-center text-sm">
                   ¿Ya tienes una cuenta?{' '}
-                  <Link to="/inicioSesion" className="text-cta hover:underline font-medium">
+                  <Link to="/inicio-sesion" className="text-cta hover:underline font-medium">
                     Inicia sesión aquí
                   </Link>
                 </div>
@@ -184,15 +182,19 @@ const Registro = () => {
 
                 <button
                   type="submit"
-                  className="w-full bg-cta hover:bg-red-700 text-white font-bold py-3 px-6 rounded-full transition duration-200 shadow-lg"
+                  className="cursor-pointer w-full bg-cta hover:bg-red-700 text-white font-bold py-3 px-6 rounded-full transition duration-200 shadow-lg"
                 >
                   Registrar
                 </button>
 
                 <div className="mt-6 text-center text-sm">
-                  <Link to="/registro" className="text-gray-600 hover:underline">
+                  <button
+                    type="button"
+                    onClick={() => setStep(1)}
+                    className="text-gray-600 hover:underline cursor-pointer"
+                  >
                     ← Volver al paso anterior
-                  </Link>
+                  </button>
                 </div>
               </form>
             )}
