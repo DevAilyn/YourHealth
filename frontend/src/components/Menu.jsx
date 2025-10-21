@@ -49,7 +49,7 @@ const Menu = () => {
                 <img className='w-2.5' src={assets.desglose} alt="abrir" />
                 <div className='absolute top-0 right-0 w-26 pt-18 text-base font-medium text-black z-20 hidden group-hover:block'>
                     <div className='bg-white rounded-2xl w-35 h-30 flex flex-col justify-center pl-3 gap-1'>
-                        <p onClick={()=>navigate('/MiPerfil')} className='hover:text-cta cursor-pointer'>Mi perfil</p>
+                        <p onClick={()=>navigate('/mi-perfil')} className='hover:text-cta cursor-pointer'>Mi perfil</p>
                         <p onClick={()=>navigate('/MisReservas')} className='hover:text-cta cursor-pointer'>Mis reservas</p>
                         <p onClick={()=>setToken(false)} className='hover:text-cta cursor-pointer'>Cerrar Sesión</p>
                     </div>
