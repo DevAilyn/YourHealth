@@ -33,6 +33,7 @@ import elipse from '../assets/images/group_images/elipse_fondo.png'
 import verifiedIcon from '../assets/images/group_icons/verified_icon.svg'
 import infoIcon from '../assets/images/group_icons/info_icon.svg'
 
+
 // === Especialidades ===
 import strength from './images/group_icons/strength_icon.png'
 import cardio from './images/group_icons/cardio_icon.png'
@@ -69,6 +70,7 @@ export const assets = {
   womanHome,
   peopleHome,
   perfil,
+  
 
   // Videos
   inicioSesionVideo,
