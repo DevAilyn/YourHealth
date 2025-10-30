@@ -28,7 +28,6 @@ Actualmente el proyecto se encuentra en construcción, con el **frontend** como 
 ---
 
 ## 📌 Próximos pasos
-- Diseñar reservas, login y sobre nosotros
 - Completar la integración del backend (API con Node + Express + MongoDB).  
 - Implementar autenticación de usuarios.  
 - Agregar funcionalidades de agendamiento de entrenamientos.  
